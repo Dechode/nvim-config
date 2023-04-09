@@ -18,5 +18,7 @@ return require('packer').startup(function()
   	requires = {'nvim-tree/nvim-web-devicons', },tag = 'nightly'}
 	-- Better syntax highlighting
 	use ('nvim-treesitter/nvim-treesitter',{run = ":TSUpdate"})
+	-- Git 
+	use 'tpope/vim-fugitive'
 end)
 
