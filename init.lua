@@ -3,7 +3,8 @@ vim.g.loaded_netrwPlugin = 1
 
 require('packer-plugins')
 local lspconfig = require('lspconfig')
-local servers = { 'clangd', 'rust_analyzer', 'pyright', 'gdscript'}
+local servers = { 'clangd', 'rust_analyzer', 'pyright', 'gdscript' }
+
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {}
 end
@@ -24,3 +25,4 @@ vim.opt.shiftwidth = 4
 vim.opt.smarttab = true
 
 vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
+
