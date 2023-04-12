@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 configs.setup {
-	ensure_installed = {"c", "help", "lua", "rust", "python", "gdscript"},
+	ensure_installed = {"c", "vimdoc", "query", "lua", "rust", "python", "gdscript"},
 	sync_install = false,
 	ignore_install = {""},
 	highlight = {
