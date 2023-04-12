@@ -11,5 +11,5 @@ Make backup of your previous config before continuing.
 Clone this repository somewhere on your computer.  
 Move contents of this folder to ~/.config/nvim  
 
-On first launch, use -PackerSync param when launching neovim. This updates all of the plugins.
+On first launch, use - PackerSync param when launching neovim. This updates all of the plugins.
 
