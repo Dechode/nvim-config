@@ -9,8 +9,8 @@ for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {}
 end
 
-require('nvim-cmp')
-require('treesitter')
+--require('nvim-cmp')
+--require('treesitter')
 require("nvim-tree").setup()
 
 vim.cmd('colorscheme gruvbox')
