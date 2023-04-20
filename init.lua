@@ -1,7 +1,6 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-vim.cmd('colorscheme gruvbox')
 vim.g.mapleader = " "
 vim.o.relativenumber = true
 vim.o.number = true
@@ -17,9 +16,12 @@ vim.opt.incsearch = true
 
 vim.opt.scrolloff = 6
 
-vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
-
 require('packer-plugins')
+
+
+vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
+vim.cmd('colorscheme gruvbox')
+
 local lspconfig = require('lspconfig')
 local servers = { 'clangd', 'rust_analyzer', 'pyright', 'gdscript' }
 
